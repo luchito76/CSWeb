@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_ConvertModelWizard_Files\UpgradeReferences.xslt"?>
+<UpgradeLog>
+  <Events>
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\CuotaSystem.csproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\CuotaSystem.csproj" Message="Project References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\CuotaSystem.csproj" Message="Import Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Account\Login.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Account\Login.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Account\Login.aspx" Message="Login.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Account\Manage.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Account\Manage.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Account\Manage.aspx" Message="Manage.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Account\OpenAuthProviders.ascx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Account\OpenAuthProviders.ascx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Account\OpenAuthProviders.ascx" Message="OpenAuthProviders.ascx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Account\Register.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Account\Register.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Account\Register.aspx" Message="Register.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Account\RegisterExternalLogin.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Account\RegisterExternalLogin.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Account\RegisterExternalLogin.aspx" Message="RegisterExternalLogin.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Account\Web.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Account\Web.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Account\Web.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Account\Web.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Account\Web.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Account\Web.config" Message="Web.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\AgregarHermano.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\AgregarHermano.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\AgregarHermano.aspx" Message="AgregarHermano.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\AltaAlumno.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\AltaAlumno.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\AltaAlumno.aspx" Message="AltaAlumno.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\AltaAutorizados.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\AltaAutorizados.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\AltaAutorizados.aspx" Message="AltaAutorizados.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\AltaConcepto.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\AltaConcepto.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\AltaConcepto.aspx" Message="AltaConcepto.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\AltaCursadas.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\AltaCursadas.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\AltaCursadas.aspx" Message="AltaCursadas.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\AltaCurso.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\AltaCurso.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\AltaCurso.aspx" Message="AltaCurso.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\AltaEscuela.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\AltaEscuela.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\AltaEscuela.aspx" Message="AltaEscuela.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Borrar.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Borrar.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Borrar.aspx" Message="Borrar.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Bundle.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Bundle.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Bundle.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Bundle.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Bundle.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Bundle.config" Message="Bundle.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Default.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Default.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Default.aspx" Message="Default.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\EditarAlumnos.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\EditarAlumnos.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\EditarAlumnos.aspx" Message="EditarAlumnos.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\EditarAutorizados.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\EditarAutorizados.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\EditarAutorizados.aspx" Message="EditarAutorizados.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\EditarConcepto.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\EditarConcepto.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\EditarConcepto.aspx" Message="EditarConcepto.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\EditarCursada.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\EditarCursada.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\EditarCursada.aspx" Message="EditarCursada.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\EditarCurso.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\EditarCurso.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\EditarCurso.aspx" Message="EditarCurso.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\EditarEscuela.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\EditarEscuela.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\EditarEscuela.aspx" Message="EditarEscuela.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\EditarInscripcion.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\EditarInscripcion.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\EditarInscripcion.aspx" Message="EditarInscripcion.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Error_404.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Error_404.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Error_404.aspx" Message="Error_404.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Inscripcion.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Inscripcion.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Inscripcion.aspx" Message="Inscripcion.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\ListaAlumnos.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\ListaAlumnos.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\ListaAlumnos.aspx" Message="ListaAlumnos.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\ListaAutorizados.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\ListaAutorizados.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\ListaAutorizados.aspx" Message="ListaAutorizados.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\ListaConceptos.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\ListaConceptos.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\ListaConceptos.aspx" Message="ListaConceptos.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\ListaCursadas.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\ListaCursadas.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\ListaCursadas.aspx" Message="ListaCursadas.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\ListaCursos.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\ListaCursos.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\ListaCursos.aspx" Message="ListaCursos.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\ListaEscuelas.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\ListaEscuelas.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\ListaEscuelas.aspx" Message="ListaEscuelas.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\ListaInscripciones.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\ListaInscripciones.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\ListaInscripciones.aspx" Message="ListaInscripciones.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Login.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Login.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Login.aspx" Message="Login.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\packages.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\packages.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\packages.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\packages.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\packages.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\packages.config" Message="packages.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\PaginaError.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\PaginaError.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\PaginaError.aspx" Message="PaginaError.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Probando.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Probando.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Probando.aspx" Message="Probando.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\RegistrarPagos.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\RegistrarPagos.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\RegistrarPagos.aspx" Message="RegistrarPagos.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Reportes\ReportePagoMensual.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Reportes\ReportePagoMensual.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Reportes\ReportePagoMensual.aspx" Message="ReportePagoMensual.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Reportes\ReporteSaldoDiario.aspx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Reportes\ReporteSaldoDiario.aspx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Reportes\ReporteSaldoDiario.aspx" Message="ReporteSaldoDiario.aspx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Site1.Master" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Site1.Master" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Site1.Master" Message="Site1.Master" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Site3.Master" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Site3.Master" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Site3.Master" Message="Site3.Master" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\ViewSwitcher.ascx" Message="Register Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\ViewSwitcher.ascx" Message="Assembly Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\ViewSwitcher.ascx" Message="ViewSwitcher.ascx" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Web.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Web.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Web.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Web.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Web.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Web.config" Message="Web.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Web.Debug.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Web.Debug.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Web.Debug.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Web.Debug.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Web.Debug.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Web.Debug.config" Message="Web.Debug.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Web.Release.config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Web.Release.config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Web.Release.config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Web.Release.config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Web.Release.config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\Web.Release.config" Message="Web.Release.config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem\CuotaSystem.csproj" Message="CuotaSystem" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\Negocio\Negocio.csproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\Negocio\Negocio.csproj" Message="Project References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\Negocio\Negocio.csproj" Message="Import Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\Negocio\Negocio.csproj" Message="Negocio" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\Repositorio\Repositorio.csproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\Repositorio\Repositorio.csproj" Message="Project References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\Repositorio\Repositorio.csproj" Message="Import Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\Repositorio\Repositorio.csproj" Message="Repositorio" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\Dominio\Dominio.csproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\Dominio\Dominio.csproj" Message="Project References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\Dominio\Dominio.csproj" Message="Import Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\Dominio\App.Config" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\Dominio\App.Config" Message="Http Handlers" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\Dominio\App.Config" Message="Handlers (IIS7+)" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\Dominio\App.Config" Message="Config Sections" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\Dominio\App.Config" Message="Render Extensions" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\Dominio\App.Config" Message="App.Config" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\Dominio\Dominio.csproj" Message="Dominio" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\Excepciones\Excepciones.csproj" Message="Assembly References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\Excepciones\Excepciones.csproj" Message="Project References" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\Excepciones\Excepciones.csproj" Message="Import Directives" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\Excepciones\Excepciones.csproj" Message="Excepciones" />
+    <Event EventType="Success" Action="Analyze" SourceItem="C:\Users\luchito\Documents\Visual Studio 2013\Projects\CuotaSystem\CuotaSystem.sln" Message="CuotaSystem" />
+  </Events>
+</UpgradeLog>

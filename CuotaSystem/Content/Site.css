@@ -1,0 +1,145 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+html,
+body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by its height */
+    margin: 0 auto -100px;
+    /* Pad bottom by footer height */
+    padding: 0 0 100px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+    height: 100px;
+    background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+    width: auto;
+    max-width: 1000px;
+    padding: 0 15px;
+}
+
+    .container .credit {
+        margin: 2px 0;
+        color: #dd4814;
+        text-align: center;
+    }
+
+    .container .dev {
+        margin: 2px 0;
+        color: gray;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+
+.container_popup {
+    width: auto;
+    max-width: 500px;
+    padding: 0 15px;
+    margin:auto;
+}
+
+    .container_popup .credit {
+        margin: 2px 0;
+        color: #dd4814;
+        text-align: center;
+    }
+
+    .container_popup .dev {
+        margin: 2px 0;
+        color: gray;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+/*Estilo del botón Entrar (Login)*/
+.button_example {
+    border: 1px solid #cb9b14;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 24px;
+    font-family: arial, helvetica, sans-serif;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    display: inline-block;
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #eab92d;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#eab92d), to(#c79810));
+    background-image: -webkit-linear-gradient(top, #eab92d, #c79810);
+    background-image: -moz-linear-gradient(top, #eab92d, #c79810);
+    background-image: -ms-linear-gradient(top, #eab92d, #c79810);
+    background-image: -o-linear-gradient(top, #eab92d, #c79810);
+    background-image: linear-gradient(to bottom, #eab92d, #c79810);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#eab92d, endColorstr=#c79810);
+}
+
+    .button_example:hover {
+        border: 1px solid #a17b10;
+        background-color: #cf9f15;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#cf9f15), to(#98740c));
+        background-image: -webkit-linear-gradient(top, #cf9f15, #98740c);
+        background-image: -moz-linear-gradient(top, #cf9f15, #98740c);
+        background-image: -ms-linear-gradient(top, #cf9f15, #98740c);
+        background-image: -o-linear-gradient(top, #cf9f15, #98740c);
+        background-image: linear-gradient(to bottom, #cf9f15, #98740c);
+        filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#cf9f15, endColorstr=#98740c);
+    }
+
+.btn-primario {
+    color: #ffffff;
+    background-color: #dd4814;
+    border-color: #dd4814;
+}
+
+    .btn-primario:hover,
+    .btn-primario:focus,
+    .btn-primario:active,
+    .btn-primario.active,
+    .open .dropdown-toggle.btn-primario {
+        color: #ffffff;
+        background-color: #b83c11;
+        border-color: #a5360f;
+    }
+
+    .btn-primario:active,
+    .btn-primario.active,
+    .open .dropdown-toggle.btn-primario {
+        background-image: none;
+    }
+
+    .btn-primario.disabled,
+    .btn-primario[disabled],
+    fieldset[disabled] .btn-primario,
+    .btn-primario.disabled:hover,
+    .btn-primario[disabled]:hover,
+    fieldset[disabled] .btn-primario:hover,
+    .btn-primario.disabled:focus,
+    .btn-primario[disabled]:focus,
+    fieldset[disabled] .btn-primario:focus,
+    .btn-primario.disabled:active,
+    .btn-primario[disabled]:active,
+    fieldset[disabled] .btn-primario:active,
+    .btn-primario.disabled.active,
+    .btn-primario[disabled].active,
+    fieldset[disabled] .btn-primario.active {
+        background-color: #dd4814;
+        border-color: #dd4814;
+    }

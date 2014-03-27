@@ -1,0 +1,174 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.Master.cs" Inherits="CuotaSystem.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <%--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.js"></script>--%>
+
+    <%--<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>    
+    
+    <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="”stylesheet" />
+
+    <script src="Bootstrap/datepicker/bootstrap-datepicker.js"></script>
+    <link href="Bootstrap/datepicker/datepicker.css" rel="stylesheet" />--%>
+    <%--  --%>
+    <%--<link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" />--%>
+
+    <link href="../Bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="../Bootstrap/Bootstrap3/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <link href="../Content/Site.css" rel="stylesheet" />
+
+</head>
+<body> 
+
+    <div id="wrap">
+        <!-- Begin page content -->
+        <div class="container">
+            <div class="page-header">
+                <asp:Image ID="Image1" runat="server" ImageUrl="../imagenes/logo.png" Width="300px" Height="150px" />
+            </div>
+            <div id="barranavegacion">
+                <ul id="menu-bar" class="menu-bar">
+                    <li><a href="index.html">Administración</a>
+                        <ul>
+                            <li><a href="#">Alumnos</a>
+                                <ul style="position: absolute; left: 100%; top: 0;">
+                                    <li><a href="../AltaAlumno.aspx">Alta Alumnos</a></li>
+                                    <li><a href="../ListaAlumnos.aspx">Editar Alumnos</a></li>
+                                    <li><a href="../ListaAlumnos.aspx">Consultar Alumnos</a></li>
+                                    <li><a href="../ListaHermanos.aspx">Consultar Hermanos</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Familiares Autorizados</a>
+                                <ul style="position: absolute; left: 100%; top: 0;">
+                                    <li><a href="../AltaAutorizados.aspx">Alta Flia Autorizada</a></li>
+                                    <li><a href="../ListaAutorizados.aspx">Editar Flia Autorizada</a></li>
+                                    <li><a href="../ListaAutorizados.aspx">Consultar Flia Autorizada</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Cursos</a>
+                                <ul style="position: absolute; left: 100%; top: 0;">
+                                    <li><a href="../AltaCurso.aspx">Alta Cursos</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="../ListaCursos.aspx">Editar Cursos</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="../ListaCursos.aspx">Consultar Cursos</a></li>
+                                    <li class="divider"></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Cursadas</a>
+                                <ul style="position: absolute; left: 100%; top: 0;">
+                                    <li><a href="../AltaCursadas.aspx">Alta Cursada</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="../ListaCursadas.aspx">Editar Cursada</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="../ListaCursadas.aspx">Consultar Cursadas</a></li>
+                                    <li class="divider"></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Escuelas</a>
+                                <ul style="position: absolute; left: 100%; top: 0;">
+                                    <li><a href="../AltaEscuela.aspx">Alta Escuela</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="../ListaEscuelas.aspx">Editar Escuela</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="../ListaEscuelas.aspx">Consultar Escuela</a></li>
+                                    <li class="divider"></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Conceptos</a>
+                                <ul style="position: absolute; left: 100%; top: 0;">
+                                    <li><a href="../AltaConcepto.aspx">Alta Concepto</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="../ListaConceptos.aspx">Editar Concepto</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="../ListaConceptos.aspx">Consultar Conceptos</a></li>
+                                    <li class="divider"></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Inscripción</a>
+                        <ul>
+                            <li><a href="../Inscripcion.aspx">Inscribir Alumno</a></li>
+                            <li><a href="../ListaInscripciones.aspx">Modificar Inscripción</a></li>
+                            <li><a href="../ListaInscripciones.aspx">Lista de Inscripciones</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Pagos</a>
+                        <ul>
+                            <li><a href="../RegistrarPagos.aspx">Registrar Pagos</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Reportes</a>
+                        <ul>
+                            <li><a href="../ReporteDePagos.aspx">Reporte Diario</a></li>
+                            <li><a href="../ReportePagoMensual.aspx">Reporte Mensual</a></li>                                                        
+                        </ul>                        
+                    </li>
+                    <li><a href="#">Contacto</a>
+                        <ul>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacto.html">Salir</a></li>
+                </ul>
+            </div>
+            <form id="form" class="form-horizontal" runat="server">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </form>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="container">
+            <p class="text-muted credit">Calle Río Colorado entre Jujuy y Perón / Rincón de los Sauces, Neuquén</p>
+            <p class="text-muted credit">Tels. de contacto: Tel: 54+0299+4468071 / 54+0299+155333772</p>
+            <p class="text-muted credit"><a class="text-primary" href="http://doshorizontes.com.ar">www.doshorizontes.com.ar</a></p>
+            <p class="dev">©2014 Luchito Fantasia</p>
+        </div>
+    </div>
+
+    <script src="../Bootstrap/Bootstrap3/jquery-1.8.3.min.js"></script>
+    <script src="../Bootstrap/Bootstrap3/bootstrap.min.js"></script>
+    <script src="../Bootstrap/Bootstrap3/bootstrap-datetimepicker.js"></script>
+    <script src="../Bootstrap/Bootstrap3/bootstrap-datetimepicker.es.js"></script>
+
+    <script type="text/javascript">
+        $('.form_datetime').datetimepicker({
+            //language:  'fr',
+            weekStart: 1,
+            todayBtn: 1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            forceParse: 0,
+            showMeridian: 1
+        });
+        $('.form_date').datetimepicker({
+            language: 'es',
+            weekStart: 1,
+            todayBtn: 1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            minView: 2,
+            forceParse: 0
+        });
+    </script>
+    <script>
+        //setInterval(function () { document.getElementById("btnAlerta").click(); }, 3000);
+
+        setTimeout(function () {
+            $('#btnAlerta').click().fadeOut('slow');
+        }, 3000)
+    </script>
+
+
+</body>
+</html>

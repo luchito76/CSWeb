@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Telerik.DataAccess.Core</id>
+    <version>2013.3.1320.1</version>
+    <title>Telerik.DataAccess.Core</title>
+    <authors>Telerik AD</authors>
+    <owners>Telerik AD</owners>
+    <licenseUrl>http://www.telerik.com/purchase/license-agreement/orm-free.aspx</licenseUrl>
+    <projectUrl>http://www.telerik.com/products/orm.aspx</projectUrl>
+    <iconUrl>http://www.telerik.com/sfimages/default-source/productsimages/openaccess-orm/Resources/nuget-telerik-data-access.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>The Telerik.DataAccess.Core NuGet package provides the Telerik Data Access runtime assemblies necessary to consume Telerik Data Access persistent objects, without defining any mapping.
+
+      If this project contains persistent classes and defines mapping, the Telerik.DataAccess.Fluent NuGet package is required as well.
+
+      Telerik Data Access helps defining mapping and executing create, retrieve, update and delete operations for your data access classes and database tables. It allows you to consume stored procedures and functions.</description>
+    <summary>The Telerik.DataAccess.Core NuGet package provides the Telerik Data Access runtime assemblies necessary to work with Telerik Data Access persistent objects.</summary>
+    <language>en-US</language>
+    <tags>DataAccess ORM OpenAccess Persistence CRUD Database Data</tags>
+  </metadata>
+</package>

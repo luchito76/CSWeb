@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>OpenAccess.Core</id>
+    <version>2013.3.1320.1</version>
+    <title>OpenAccess.Core</title>
+    <authors>Telerik AD</authors>
+    <owners>Telerik AD</owners>
+    <licenseUrl>http://www.telerik.com/purchase/license-agreement/orm-free.aspx</licenseUrl>
+    <projectUrl>http://www.telerik.com/products/orm.aspx</projectUrl>
+    <iconUrl>http://www.telerik.com/sfimages/default-source/productsimages/openaccess-orm/Resources/nuget-telerik-data-access.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>This Nuget Package is deprecated since the product has been renamed to Telerik Data Access. Please use Telerik.DataAccess.Core instead.</description>
+    <summary>This Nuget Package is deprecated since the product has been renamed to Telerik Data Access. Please use Telerik.DataAccess.Core instead.</summary>
+    <language>en-US</language>
+    <tags>ORM Entity Mapping DataAccess Database DAL</tags>
+    <dependencies>
+      <dependency id="Telerik.DataAccess.Core" version="[2013.3.1320.1]" />
+    </dependencies>
+  </metadata>
+</package>

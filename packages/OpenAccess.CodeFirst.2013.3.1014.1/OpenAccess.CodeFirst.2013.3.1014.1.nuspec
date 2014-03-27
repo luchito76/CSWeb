@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>OpenAccess.CodeFirst</id>
+    <version>2013.3.1014.1</version>
+    <title>OpenAccess.CodeFirst</title>
+    <authors>Telerik AD</authors>
+    <owners>Telerik AD</owners>
+    <licenseUrl>http://www.telerik.com/purchase/license-agreement/orm-free.aspx</licenseUrl>
+    <projectUrl>http://www.telerik.com/products/orm.aspx</projectUrl>
+    <iconUrl>http://www.telerik.com/images/NuGet_Telerik_OpenAccess_ORM.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The OpenAccess.CodeFirst NuGet package is designed for projects containing classes that are stored using OpenAccess ORM.
+
+      It provides the assembly references and project enhancements made by the OpenAccess ORM Enhancer tool during the build process, required by Telerik OpenAccess ORM runtime.
+
+      If you need a NuGet package for a project only consuming OpenAccess ORM model from another assembly, the OpenAccess.Core NuGet package which contains the OpenAccess ORM runtime assemblies necessary to work with OpenAccess persistent objects is sufficient and can be used instead.
+
+      Telerik OpenAccess ORM helps defining mapping and executing create, retrieve, update and delete operations for your data access classes and database tables. It allows you to consume stored procedures and functions.</description>
+    <summary>The OpenAccess.CodeFirst NuGet package is designed for projects containing classes that are stored using OpenAccess ORM.</summary>
+    <language>en-US</language>
+    <tags>ORM Fluent CodeOnly Entity Mapping DataAccess Database DAL</tags>
+    <dependencies>
+      <dependency id="OpenAccess.Core" version="2013.3.1014.1" />
+    </dependencies>
+  </metadata>
+</package>

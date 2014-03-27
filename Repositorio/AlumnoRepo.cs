@@ -8,8 +8,7 @@ using Dominio;
 namespace Repositorio
 {
     public class AlumnoRepo
-    {
-        
+    {        
         ModeloDominio dominio = new ModeloDominio();
         
         public void guardarAlumno(Alumno alumno)

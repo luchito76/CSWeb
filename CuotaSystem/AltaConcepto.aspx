@@ -204,8 +204,8 @@
         $(document).ready(function () {
 
             $('.gdvListaConceptos').pageMe({ pagerSelector: '.myPager', showPrevNext: true, hidePageNumbers: false, perPage: 4 });
-
+            ////$('.gdvListaConceptos').pageMe({ pagerSelector: '.myPager', showPrevNext: true, hidePageNumbers: false, perPage: 4 });
         });
     </script>
-    <script src="//raw.github.com/botmonster/jquery-bootpag/master/lib/jquery.bootpag.min.js"></script>
+    <%--<script src="//raw.github.com/botmonster/jquery-bootpag/master/lib/jquery.bootpag.min.js"></script>--%>
 </asp:Content>

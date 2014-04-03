@@ -296,6 +296,7 @@
     <Content Include="AltaEscuela.aspx" />
     <Content Include="AltaCurso.aspx" />
     <Content Include="AltaAutorizados.aspx" />
+    <Content Include="AltaUsuario.aspx" />
     <Content Include="bootstrap3-typeahead.js" />
     <Content Include="bootstrap3-typeahead.min.js" />
     <Content Include="Bootstrap\Autocomplete\bootstrap-tagautocomplete.js" />
@@ -549,6 +550,13 @@
     </Compile>
     <Compile Include="AltaCursadas.aspx.designer.cs">
       <DependentUpon>AltaCursadas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AltaUsuario.aspx.cs">
+      <DependentUpon>AltaUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AltaUsuario.aspx.designer.cs">
+      <DependentUpon>AltaUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Borrar.aspx.cs">
       <DependentUpon>Borrar.aspx</DependentUpon>

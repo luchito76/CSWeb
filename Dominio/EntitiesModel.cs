@@ -210,6 +210,14 @@ namespace Dominio
 			}
 		}
 		
+		public IQueryable<Usuario> Usuarios 
+		{
+			get
+			{
+				return this.GetAll<Usuario>();
+			}
+		}
+		
 		public IEnumerable<ListaAutorizadosXAlumnoResultSet0> SP_ListaAutorizadosXAlumno()
 		{
 			int returnValue;
@@ -608,6 +616,10 @@ namespace Dominio
 			get;
 		}
 		IQueryable<ConceptoXCurso> ConceptoXCursos
+		{
+			get;
+		}
+		IQueryable<Usuario> Usuarios
 		{
 			get;
 		}

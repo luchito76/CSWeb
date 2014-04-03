@@ -652,6 +652,34 @@
           </orm:reference>
         </orm:field>
       </orm:class>
+      <orm:class name="Usuario" uniqueId="d0abad5e-eb22-448c-ad17-01c514253a2d">
+        <orm:table name="Usuarios" />
+        <orm:identity>
+          <orm:key-generator name="autoinc">
+            <orm:key-generator-member property-name="IdUsuario" />
+          </orm:key-generator>
+          <orm:single-field field-name="idUsuario" />
+        </orm:identity>
+        <orm:concurrency strategy="changed" />
+        <orm:field name="idUsuario" property="IdUsuario" behavior="readwrite" uniqueId="6c95c3f5-2a5e-4719-8ff6-66e8df618908" type="System.Int32">
+          <orm:column name="idUsuario" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="nombre" property="Nombre" behavior="readwrite" uniqueId="648c44ff-a75f-4014-8654-f6eab71ca32f" type="System.String">
+          <orm:column name="nombre" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="apellido" property="Apellido" behavior="readwrite" uniqueId="5463027e-c6f8-4998-80a8-c24004619e0a" type="System.String">
+          <orm:column name="apellido" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="usuario1" property="Usuario1" behavior="readwrite" uniqueId="9b524a15-47d2-418e-9c43-378915cace90" type="System.String">
+          <orm:column name="usuario" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="contraseña" property="Contraseña" behavior="readwrite" uniqueId="1c553bba-f950-4f2b-9283-d319fc5a8c3b" type="System.String">
+          <orm:column name="contraseña" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="StringVariableLength" />
+        </orm:field>
+        <orm:field name="admin" property="Admin" behavior="readwrite" uniqueId="3bd0656c-840f-4117-83b9-9f26703c554c" type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="admin" sql-type="bit" nullable="true" length="0" scale="0" ado-type="Bit" />
+        </orm:field>
+      </orm:class>
     </orm:namespace>
     <orm:schema schema="">
       <orm:table name="Parentesco">
@@ -845,6 +873,14 @@
         <orm:constraint name="FK__ConceptoX__idCon__6D0D32F4" delete-action="dbdefaultrule" destination-table="Concepto">
           <orm:column name="idConcepto" sql-type="int" nullable="true" length="0" scale="0" ado-type="Int32" />
         </orm:constraint>
+      </orm:table>
+      <orm:table name="Usuarios">
+        <orm:column name="idUsuario" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        <orm:column name="nombre" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="apellido" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="usuario" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="contraseña" sql-type="varchar" nullable="true" length="30" scale="0" ado-type="StringVariableLength" />
+        <orm:column name="admin" sql-type="bit" nullable="true" length="0" scale="0" ado-type="Bit" />
       </orm:table>
       <orm:procedure name="ListaAutorizadosXAlumno">
         <orm:result-sets />
@@ -1520,6 +1556,14 @@
         </classHasNavigationalProperties>
       </navigationalProperties>
     </DomainClass>
+    <DomainClass Id="d0abad5e-eb22-448c-ad17-01c514253a2d" name="Usuario" namespace="Dominio" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" concurrencyMode="Changed" showNavigationCompartment="true" showImplementationCompartment="true" identityMechanismMember="IdUsuario">
+      <Property Id="6c95c3f5-2a5e-4719-8ff6-66e8df618908" name="IdUsuario" type="Int32" label="IdUsuario : Int32" kind="Persistent" identity="true" fieldName="idUsuario" />
+      <Property Id="3bd0656c-840f-4117-83b9-9f26703c554c" name="Admin" type="Boolean" label="Admin : Boolean" nullable="true" kind="Persistent" fieldName="admin" />
+      <Property Id="5463027e-c6f8-4998-80a8-c24004619e0a" name="Apellido" label="Apellido : String" kind="Persistent" fieldName="apellido" />
+      <Property Id="1c553bba-f950-4f2b-9283-d319fc5a8c3b" name="Contraseña" label="Contraseña : String" kind="Persistent" fieldName="contraseña" />
+      <Property Id="648c44ff-a75f-4014-8654-f6eab71ca32f" name="Nombre" label="Nombre : String" kind="Persistent" fieldName="nombre" />
+      <Property Id="9b524a15-47d2-418e-9c43-378915cace90" name="Usuario1" label="Usuario1 : String" kind="Persistent" fieldName="usuario1" />
+    </DomainClass>
   </Types>
   <domainContext>
     <domainModelHasDomainContext Id="45a8cd7b-765d-419f-912b-6807428a18e2">
@@ -1544,6 +1588,7 @@
         <entitySetProperty name="TipoDeConceptos" namespace="Dominio" type="TipoDeConcepto" label="TipoDeConceptos : IQueryable&lt;Dominio.TipoDeConcepto&gt;" />
         <entitySetProperty name="InscripcionXConceptos" namespace="Dominio" type="InscripcionXConcepto" label="InscripcionXConceptos : IQueryable&lt;Dominio.InscripcionXConcepto&gt;" />
         <entitySetProperty name="ConceptoXCursos" namespace="Dominio" type="ConceptoXCurso" label="ConceptoXCursos : IQueryable&lt;Dominio.ConceptoXCurso&gt;" />
+        <entitySetProperty name="Usuarios" namespace="Dominio" type="Usuario" label="Usuarios : IQueryable&lt;Dominio.Usuario&gt;" />
       </domainContainer>
     </domainModelHasDomainContext>
   </domainContext>

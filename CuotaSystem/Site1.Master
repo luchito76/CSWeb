@@ -32,7 +32,7 @@
             </div>
             <div id="barranavegacion">
                 <ul id="menu-bar" class="menu-bar">
-                    <li><a href="index.html">Administración</a>
+                    <li><a href="#">Administración</a>
                         <ul>
                             <li><a href="#">Alumnos</a>
                                 <ul style="position: absolute; left: 100%; top: 0;">

@@ -711,6 +711,7 @@
     </Compile>
     <Compile Include="PagoDeMatricula.cs" />
     <Compile Include="PagoExamen.cs" />
+    <Compile Include="Pepe.cs" />
     <Compile Include="Probando.aspx.cs">
       <DependentUpon>Probando.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

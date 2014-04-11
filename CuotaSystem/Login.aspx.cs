@@ -31,8 +31,6 @@ namespace CuotaSystem
             string contraseña = txtContraseña.Text;
 
             Usuario oUsuario = new Usuario();
-            oUsuario = new Usuario();
-            usuarioNego = new UsuarioNego();
 
             oUsuario = usuarioNego.listaUsuarioXusuario(usuario).FirstOrDefault();
 
@@ -63,12 +61,23 @@ namespace CuotaSystem
             return sb.ToString();
         }
 
-        protected void btnEntrar_ServerClick(object sender, EventArgs e)
+        public bool validarLogin()
+        {
+            bool usuarioValidado = false;
+            bool login = Convert.ToBoolean(Session["login"]);
+
+            if ((login == true) && (Session["usuario"] != null))
+                usuarioValidado = true;
+
+            else
+                usuarioValidado = false;
+
+            return usuarioValidado;
+        }
+
+        protected void btnLogin_Click(object sender, EventArgs e)
         {
             string usuarioSession = string.Empty;
-
-
-
 
             bool usuarioValidado = validarUsuario();
 
@@ -85,20 +94,6 @@ namespace CuotaSystem
 
                 Utility.Utility.limpiarControles(this.Controls);
             }
-        }
-
-        public bool validarLogin()
-        {
-            bool usuarioValidado = false;
-            bool login = Convert.ToBoolean(Session["login"]);
-
-            if ((login == true) && (Session["usuario"] != null))
-                usuarioValidado = true;
-
-            else
-                usuarioValidado = false;
-
-            return usuarioValidado;
         }
     }
 }

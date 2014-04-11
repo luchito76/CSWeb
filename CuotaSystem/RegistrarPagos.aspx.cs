@@ -60,7 +60,10 @@ namespace CuotaSystem
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            //dtpFechaPago.Text = fechaActual();
+            Login login = new Login();
+
+            if (!login.validarLogin())
+                Response.Redirect("Login.aspx");
 
             if (IsPostBack) return;
 

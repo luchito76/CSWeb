@@ -19,6 +19,11 @@ namespace CuotaSystem.Reportes
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            Login login = new Login();
+
+            if (!login.validarLogin())
+                Response.Redirect("Login.aspx");
+
             if (IsPostBack) return;
             llenarTabla();
         }
@@ -29,15 +34,18 @@ namespace CuotaSystem.Reportes
             gdvReportePagoMensual.DataBind();
         }
 
-        private void llenarReporte() {
+        private void llenarReporte()
+        {
             gdvReporte.DataSource = reportesNego.ReporteDePagosMensuales().ToList();
             gdvReporte.DataBind();
         }
 
-        private void sumaSaldoMensual() { 
+        private void sumaSaldoMensual()
+        {
             IList<ReporteDePagosMensualesResultSet0> listaPagoMensual = reportesNego.ReporteDePagosMensuales().ToList();
 
-            foreach (ReporteDePagosMensualesResultSet0 data in listaPagoMensual) { 
+            foreach (ReporteDePagosMensualesResultSet0 data in listaPagoMensual)
+            {
                 //data.
             }
         }
@@ -112,7 +120,7 @@ namespace CuotaSystem.Reportes
 
         protected void btnPdf_Click(object sender, EventArgs e)
         {
-            convertirPDF();            
+            convertirPDF();
         }
 
         private void convertirPDF()
@@ -130,7 +138,7 @@ namespace CuotaSystem.Reportes
                     StringReader sr = new StringReader(sw.ToString());
                     Document pdfDoc = new Document(PageSize.A2, 10f, 10f, 10f, 0f);
                     HTMLWorker htmlparser = new HTMLWorker(pdfDoc);
-                    PdfWriter.GetInstance(pdfDoc, Response.OutputStream);                    
+                    PdfWriter.GetInstance(pdfDoc, Response.OutputStream);
 
                     pdfDoc.Open();
                     htmlparser.Parse(sr);
@@ -191,13 +199,13 @@ namespace CuotaSystem.Reportes
                 Response.Flush();
                 Response.End();
             }
-        }        
+        }
 
         public override void VerifyRenderingInServerForm(Control control)
         {
 
         }
-             
+
         protected void gdvReporte_RowDataBound(object sender, GridViewRowEventArgs e)
         {
 

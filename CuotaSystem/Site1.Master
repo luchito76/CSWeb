@@ -30,7 +30,7 @@
             <div class="page-header">
                 <asp:Image ID="Image1" runat="server" ImageUrl="../imagenes/logo.png" Width="300px" Height="150px" />
             </div>
-            <div id="barranavegacion">
+            <div id="barranavegacion" runat="server">
                 <ul id="menu-bar" class="menu-bar">
                     <li><a href="#">Administración</a>
                         <ul>

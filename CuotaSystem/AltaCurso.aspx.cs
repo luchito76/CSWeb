@@ -18,6 +18,11 @@ namespace CuotaSystem.Cursos
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            Login login = new Login();
+
+            if (!login.validarLogin())
+                Response.Redirect("Login.aspx");
+
             Utility.Utility.checkButtonDoubleClick(btnGuardar, this.Page);
             llenarTabla();
 
@@ -40,7 +45,8 @@ namespace CuotaSystem.Cursos
             Response.Redirect("AltaCurso.aspx");
         }
 
-        private void guardarConceptoXCurso() {
+        private void guardarConceptoXCurso()
+        {
             int idCurso = cursoNego.obtieneUltimoIdCurso().IdCurso;
 
             ConceptoXCurso conceptoXCursoCuota = new ConceptoXCurso();
@@ -60,7 +66,7 @@ namespace CuotaSystem.Cursos
 
             cursoNego.guardarConceptoXCurso(conceptoXCursoCuota);
             cursoNego.guardarConceptoXCurso(conceptoXCursoMatricula);
-            cursoNego.guardarConceptoXCurso(conceptoXCursoExamen);            
+            cursoNego.guardarConceptoXCurso(conceptoXCursoExamen);
         }
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
@@ -89,7 +95,7 @@ namespace CuotaSystem.Cursos
             ddlConceptoExamen.DataBind();
             ddlConceptoExamen.Items.Insert(0, new ListItem("--Seleccione--", "0"));
         }
-        
+
         private void llenarTabla()
         {
             gdvListaCursos.DataSource = cursoNego.listaCursos().ToList();

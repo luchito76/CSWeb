@@ -280,11 +280,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Account\Login.aspx" />
-    <Content Include="Account\Manage.aspx" />
-    <Content Include="Account\OpenAuthProviders.ascx" />
-    <Content Include="Account\Register.aspx" />
-    <Content Include="Account\RegisterExternalLogin.aspx" />
     <Content Include="AgregarHermano.aspx" />
     <Content Include="AltaAlumno.aspx" />
     <Content Include="AltaConcepto.aspx" />
@@ -336,7 +331,6 @@
     <Content Include="Bootstrap\TypeHead\typeahead.bundle.js" />
     <Content Include="Bootstrap\TypeHead\typeahead.bundle.min.js" />
     <Content Include="Bootstrap\TypeHead\typeahead.jquery.js" />
-    <Content Include="Borrar.aspx" />
     <Content Include="Content\bootstrap-datetimepicker.css" />
     <Content Include="Content\bootstrap-datetimepicker.min.css" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -388,7 +382,6 @@
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="Account\Web.config" />
     <Content Include="Bootstrap\Bootstrap3\bootstrap-datepicker.min" />
     <Content Include="Bootstrap\Bootstrap3\glyphicons-halflings-regular.eot" />
     <Content Include="Bootstrap\Bootstrap3\glyphicons-halflings-regular.ttf" />
@@ -463,41 +456,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Account\Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\Manage.aspx.cs">
-      <DependentUpon>Manage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\Manage.aspx.designer.cs">
-      <DependentUpon>Manage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\OpenAuthProviders.ascx.cs">
-      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\OpenAuthProviders.ascx.designer.cs">
-      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\Register.aspx.cs">
-      <DependentUpon>Register.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\Register.aspx.designer.cs">
-      <DependentUpon>Register.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Account\RegisterExternalLogin.aspx.cs">
-      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Account\RegisterExternalLogin.aspx.designer.cs">
-      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
-    </Compile>
     <Compile Include="AgregarHermano.aspx.cs">
       <DependentUpon>AgregarHermano.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -554,19 +512,19 @@
     <Compile Include="AltaUsuario.aspx.designer.cs">
       <DependentUpon>AltaUsuario.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Borrar.aspx.cs">
-      <DependentUpon>Borrar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Borrar.aspx.designer.cs">
-      <DependentUpon>Borrar.aspx</DependentUpon>
-    </Compile>
     <Compile Include="ListaHermanos.aspx.cs">
       <DependentUpon>ListaHermanos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ListaHermanos.aspx.designer.cs">
       <DependentUpon>ListaHermanos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="PagoDeCuotas.cs" />
     <Compile Include="EditarAlumnos.aspx.cs">
@@ -694,13 +652,6 @@
     <Compile Include="ListaInscripciones.aspx.designer.cs">
       <DependentUpon>ListaInscripciones.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="PaginaError.aspx.cs">
       <DependentUpon>PaginaError.aspx</DependentUpon>
@@ -711,7 +662,6 @@
     </Compile>
     <Compile Include="PagoDeMatricula.cs" />
     <Compile Include="PagoExamen.cs" />
-    <Compile Include="Pepe.cs" />
     <Compile Include="Probando.aspx.cs">
       <DependentUpon>Probando.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -17,12 +17,17 @@ namespace CuotaSystem.Cursos
         CursoNego cursoNego = new CursoNego();
         protected void Page_Load(object sender, EventArgs e)
         {
+            Login login = new Login();
+
+            if (!login.validarLogin())
+                Response.Redirect("Login.aspx");
+
             llenarTabla();
         }
 
         private void llenarTabla()
         {
-            gdvListaCursos.DataSource = cursoNego.listaCursos().ToList();            
+            gdvListaCursos.DataSource = cursoNego.listaCursos().ToList();
             gdvListaCursos.DataBind();
         }
 
@@ -32,7 +37,7 @@ namespace CuotaSystem.Cursos
             {
                 Response.Redirect("EditarCurso.aspx?idCurso=" + e.CommandArgument);
             }
-        }       
+        }
 
         protected void gdvListaCursos_SelectedIndexChanging(object sender, GridViewSelectEventArgs e)
         {
@@ -44,6 +49,6 @@ namespace CuotaSystem.Cursos
         {
             gdvListaCursos.PageIndex = e.NewPageIndex;
             gdvListaCursos.DataBind();
-        }       
+        }
     }
 }

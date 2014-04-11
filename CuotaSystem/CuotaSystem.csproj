@@ -373,6 +373,7 @@
     <Content Include="ListaHermanos.aspx" />
     <Content Include="ListaInscripciones.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
     <Content Include="RegistrarPagos.aspx" />
     <Content Include="ReporteDePagos.aspx" />
     <Content Include="ReportePagoMensual.aspx" />
@@ -525,6 +526,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
     <Compile Include="PagoDeCuotas.cs" />
     <Compile Include="EditarAlumnos.aspx.cs">

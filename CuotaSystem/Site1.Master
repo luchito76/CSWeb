@@ -121,7 +121,7 @@
                             <li><a href="#"></a></li>
                         </ul>
                     </li>
-                    <li><a href="contacto.html">Salir</a></li>
+                    <li><a href="Logout.aspx">Salir</a></li>
                 </ul>
             </div>
             <form id="form" class="form-horizontal" runat="server">

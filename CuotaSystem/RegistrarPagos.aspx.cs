@@ -119,7 +119,7 @@ namespace CuotaSystem
 
         protected void ddlTipoDeConcepto_SelectedIndexChanged(object sender, EventArgs e)
         {
-            dtpFechaPago.Text = DateTime.Today.ToShortDateString();
+            dtpFechaPago.Text = (dtpFechaPago.Text == "") ? DateTime.Today.ToShortDateString() : dtpFechaPago.Text ;
 
             int idConcepto = 0;
             int idTipoDeConcepto = int.Parse(ddlTipoDeConcepto.SelectedValue);
@@ -148,7 +148,9 @@ namespace CuotaSystem
 
                 ddlConcepto.Text = concepto.IdConcepto.ToString();
                 decimal valorConcepto = Convert.ToDecimal(concepto.ValorConcepto);
+
                 DateTime fechaPago = Convert.ToDateTime(dtpFechaPago.Text);
+                
                 txtAlumno.Text = hdnNombreAlumno.Value;
 
                 Utility.PagosEnum pagos = (Utility.PagosEnum)concepto.IdTipoDeConcepto;

@@ -16,12 +16,7 @@ namespace CuotaSystem
         GrupoFamiliarNego grupoFamiliarNego = new GrupoFamiliarNego();
 
         protected void Page_Load(object sender, EventArgs e)
-        {
-            Login login = new Login();
-
-            if (!login.validarLogin())
-                Response.Redirect("Login.aspx");
-
+       {
             if (IsPostBack) return;
             Utility.Utility.checkButtonDoubleClick(btnGuardar, this.Page);
             alerta.Visible = false;

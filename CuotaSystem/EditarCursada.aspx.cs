@@ -13,15 +13,10 @@ namespace CuotaSystem
     {
         CursoNego cursoNego = new CursoNego();
         CursadaNego cursadaNego = new CursadaNego();
-        Cursada cursada = new Cursada();        
+        Cursada cursada = new Cursada();
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            Login login = new Login();
-
-            if (!login.validarLogin())
-                Response.Redirect("Login.aspx");
-
             if (IsPostBack) return;
 
             Utility.Utility.checkButtonDoubleClick(btnGuardar, this.Page);
@@ -32,7 +27,7 @@ namespace CuotaSystem
         private void llenarListas()
         {
             ddlCurso.DataSource = cursoNego.listaCursos().ToList();
-            ddlCurso.DataBind();            
+            ddlCurso.DataBind();
         }
 
         private void mostrarCurso()
@@ -41,14 +36,15 @@ namespace CuotaSystem
 
             cursada = cursadaNego.listaCursadaXId(idCursada).FirstOrDefault();
 
-            ddlCurso.Text = cursada.Curso.IdCurso.ToString();           
+            ddlCurso.Text = cursada.Curso.IdCurso.ToString();
             dtpFechaInicio.Text = String.Format("{0:dd/MM/yyyy}", cursada.FechaInicio);
             dtpFechaFin.Text = String.Format("{0:dd/MM/yyyy}", cursada.FechaFin);
         }
 
-        private void actualizarCursada() { 
+        private void actualizarCursada()
+        {
             cursada.IdCursada = int.Parse(Request["idCursada"].ToString());
-            cursada.IdCurso = int.Parse(ddlCurso.SelectedValue);                  
+            cursada.IdCurso = int.Parse(ddlCurso.SelectedValue);
             cursada.FechaInicio = Convert.ToDateTime(dtpFechaInicio.Text);
             cursada.FechaFin = Convert.ToDateTime(dtpFechaFin.Text);
             cursada.Activo = true;

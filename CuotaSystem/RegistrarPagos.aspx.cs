@@ -26,8 +26,6 @@ namespace CuotaSystem
         PagoDeMatricula pagoDeMatricula = new PagoDeMatricula();
         PagoExamen pagoExamen = new PagoExamen();
 
-        Login login = new Login();
-
         [Serializable]
         public class MyJsonDictionary<K, V> : ISerializable
         {
@@ -62,9 +60,6 @@ namespace CuotaSystem
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!login.validarLogin())
-                Response.Redirect("Login.aspx");
-
             if (IsPostBack) return;
 
             Utility.Utility.checkButtonDoubleClick(btnGuardar, this.Page);
@@ -119,7 +114,7 @@ namespace CuotaSystem
 
         protected void ddlTipoDeConcepto_SelectedIndexChanged(object sender, EventArgs e)
         {
-            dtpFechaPago.Text = (dtpFechaPago.Text == "") ? DateTime.Today.ToShortDateString() : dtpFechaPago.Text ;
+            dtpFechaPago.Text = (dtpFechaPago.Text == "") ? DateTime.Today.ToShortDateString() : dtpFechaPago.Text;
 
             int idConcepto = 0;
             int idTipoDeConcepto = int.Parse(ddlTipoDeConcepto.SelectedValue);
@@ -150,7 +145,7 @@ namespace CuotaSystem
                 decimal valorConcepto = Convert.ToDecimal(concepto.ValorConcepto);
 
                 DateTime fechaPago = Convert.ToDateTime(dtpFechaPago.Text);
-                
+
                 txtAlumno.Text = hdnNombreAlumno.Value;
 
                 Utility.PagosEnum pagos = (Utility.PagosEnum)concepto.IdTipoDeConcepto;

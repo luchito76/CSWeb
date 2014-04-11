@@ -13,11 +13,6 @@ namespace CuotaSystem
         CursadaNego cursadaNego = new CursadaNego();
         protected void Page_Load(object sender, EventArgs e)
         {
-            Login login = new Login();
-
-            if (!login.validarLogin())
-                Response.Redirect("Login.aspx");
-
             llenarTabla();
         }
 

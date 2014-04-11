@@ -13,15 +13,10 @@ namespace CuotaSystem
     {
         AlumnoNego alumnoNego = new AlumnoNego();
         CursadaNego cursadaNego = new CursadaNego();
-        InscripcionNego inscripcionNego = new InscripcionNego();        
+        InscripcionNego inscripcionNego = new InscripcionNego();
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            Login login = new Login();
-
-            if (!login.validarLogin())
-                Response.Redirect("Login.aspx");
-
             if (IsPostBack) return;
 
             Utility.Utility.checkButtonDoubleClick(btnGuardar, this.Page);
@@ -39,7 +34,7 @@ namespace CuotaSystem
 
             ddlCursada.DataSource = cursadaNego.listaCursadaXCurso().ToList();
             ddlCursada.DataBind();
-            ddlCursada.Items.Insert(0, new ListItem("--Seleccione--", "0"));           
+            ddlCursada.Items.Insert(0, new ListItem("--Seleccione--", "0"));
         }
 
         private void guardarCursada()
@@ -52,7 +47,7 @@ namespace CuotaSystem
             inscripcion.InscripcionAnulada = false;
             inscripcion.Observaciones = txtObservaciones.Text;
 
-            inscripcionNego.guardarInscripcion(inscripcion);            
+            inscripcionNego.guardarInscripcion(inscripcion);
         }
 
         protected void btnGuardar_Click(object sender, EventArgs e)

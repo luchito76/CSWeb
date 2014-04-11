@@ -12,15 +12,10 @@ namespace CuotaSystem
     public partial class Cursadas : System.Web.UI.Page
     {
         CursoNego cursoNego = new CursoNego();
-        CursadaNego cursadaNego = new CursadaNego();        
+        CursadaNego cursadaNego = new CursadaNego();
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            Login login = new Login();
-
-            if (!login.validarLogin())
-                Response.Redirect("Login.aspx");
-
             if (IsPostBack) return;
 
             Utility.Utility.checkButtonDoubleClick(btnGuardar, this.Page);
@@ -32,7 +27,7 @@ namespace CuotaSystem
             ddlCurso.DataSource = cursoNego.listaCursos().ToList();
             ddlCurso.DataBind();
             ddlCurso.Items.Insert(0, new ListItem("--Seleccion--", "0"));
-            ddlCurso.Items.Insert(0, new ListItem("--Seleccione--", "0"));           
+            ddlCurso.Items.Insert(0, new ListItem("--Seleccione--", "0"));
         }
 
         private void guardarCursada()
@@ -41,7 +36,7 @@ namespace CuotaSystem
 
             cursada.IdCurso = int.Parse(ddlCurso.SelectedValue);
             cursada.FechaInicio = Convert.ToDateTime(dtpFechaInicio.Text);
-            cursada.FechaFin = Convert.ToDateTime(dtpFechaFin.Text);            
+            cursada.FechaFin = Convert.ToDateTime(dtpFechaFin.Text);
             cursada.Activo = true;
 
             cursadaNego.guardarCursada(cursada);

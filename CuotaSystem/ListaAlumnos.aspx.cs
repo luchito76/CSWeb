@@ -14,11 +14,6 @@ namespace CuotaSystem
         AlumnoNego alumnoNego = new AlumnoNego();
         protected void Page_Load(object sender, EventArgs e)
         {
-            Login login = new Login();
-
-            if (!login.validarLogin())
-                Response.Redirect("Login.aspx");
-
             llenarTabla();
         }
 
@@ -46,6 +41,6 @@ namespace CuotaSystem
         {
             gdvListaAlumnos.PageIndex = e.NewPageIndex;
             gdvListaAlumnos.DataBind();
-        } 
+        }
     }
 }

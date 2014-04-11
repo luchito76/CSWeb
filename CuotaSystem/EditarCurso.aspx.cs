@@ -13,32 +13,27 @@ namespace CuotaSystem.Cursos
     public partial class EditarCurso : System.Web.UI.Page
     {
         CursoNego cursoNego = new CursoNego();
-       ConceptoNego conceptoNego = new ConceptoNego();
+        ConceptoNego conceptoNego = new ConceptoNego();
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            Login login = new Login();
-
-            if (!login.validarLogin())
-                Response.Redirect("Login.aspx");
-
             if (IsPostBack) return;
 
             Utility.Utility.checkButtonDoubleClick(btnGuardar, this.Page);
             llenarListas();
-            mostrarCurso();            
+            mostrarCurso();
         }
 
         private void llenarListas()
         {
             ddlConceptoCuota.DataSource = conceptoNego.listaConceptosXIdTipoConcepto(1).ToList();
-            ddlConceptoCuota.DataBind();            
+            ddlConceptoCuota.DataBind();
 
             ddlConceptoMatricula.DataSource = conceptoNego.listaConceptosXIdTipoConcepto(2).ToList();
-            ddlConceptoMatricula.DataBind();            
+            ddlConceptoMatricula.DataBind();
 
             ddlConceptoExamen.DataSource = conceptoNego.listaConceptosXIdTipoConcepto(3).ToList();
-            ddlConceptoExamen.DataBind();            
+            ddlConceptoExamen.DataBind();
         }
 
         private void mostrarCurso()
@@ -47,15 +42,16 @@ namespace CuotaSystem.Cursos
 
             Curso curso = new Curso();
             curso = cursoNego.listaCursoXId(idCurso).FirstOrDefault();
-            
+
             IList<DevuelveConceptoXCursoResultSet0> listaConceptoXCurso = cursoNego.listaConceptosXCurso(idCurso).ToList();
 
-            int x = 0;            
+            int x = 0;
             int[] conceptoXCurso = new int[3];
 
-            foreach (DevuelveConceptoXCursoResultSet0 conceptoXCursoData in listaConceptoXCurso) { 
+            foreach (DevuelveConceptoXCursoResultSet0 conceptoXCursoData in listaConceptoXCurso)
+            {
                 conceptoXCurso[x] = conceptoXCursoData.idConcepto;
-                x++;                
+                x++;
             }
 
             txtDescripcion.Text = curso.Nombre;
@@ -84,11 +80,11 @@ namespace CuotaSystem.Cursos
 
         private void actualizarCurso()
         {
-            Curso curso = new Curso();           
+            Curso curso = new Curso();
 
             curso.IdCurso = int.Parse(Request["idCurso"]);
             curso.Nombre = txtDescripcion.Text;
-            
+
             curso.Activo = isCursoChecked();
 
             cursoNego.actualizarCurso(curso);
@@ -99,41 +95,42 @@ namespace CuotaSystem.Cursos
         private void actualizarConceptoXCurso()
         {
             int idCurso = int.Parse(Request["idCurso"].ToString());
-            
+
             int x = 0;
             int[] idConceptoXCurso = new int[3];
 
             IList<DevuelveConceptoXCursoResultSet0> listaConceptoXCurso = cursoNego.listaConceptosXCurso(idCurso).ToList();
 
-            foreach (DevuelveConceptoXCursoResultSet0 data in listaConceptoXCurso) { 
+            foreach (DevuelveConceptoXCursoResultSet0 data in listaConceptoXCurso)
+            {
                 idConceptoXCurso[x] = data.idConceptoXCurso;
                 x++;
             }
 
-            ConceptoXCurso conceptoXCursoCuota = new ConceptoXCurso();           
-            
+            ConceptoXCurso conceptoXCursoCuota = new ConceptoXCurso();
+
             conceptoXCursoCuota.IdCurso = idCurso;
-            conceptoXCursoCuota.IdConcepto = int.Parse(ddlConceptoCuota.SelectedValue);           
+            conceptoXCursoCuota.IdConcepto = int.Parse(ddlConceptoCuota.SelectedValue);
             conceptoXCursoCuota.IdConceptoXCurso = idConceptoXCurso[0];
 
             cursoNego.actualizarConceptoXCurso(conceptoXCursoCuota);
 
             ConceptoXCurso conceptoXCursoMatricula = new ConceptoXCurso();
-            
+
             conceptoXCursoMatricula.IdCurso = idCurso;
-            conceptoXCursoMatricula.IdConcepto = int.Parse(ddlConceptoMatricula.SelectedValue);           
+            conceptoXCursoMatricula.IdConcepto = int.Parse(ddlConceptoMatricula.SelectedValue);
             conceptoXCursoMatricula.IdConceptoXCurso = idConceptoXCurso[1];
 
             cursoNego.actualizarConceptoXCurso(conceptoXCursoMatricula);
 
             ConceptoXCurso conceptoXCursoExamen = new ConceptoXCurso();
-                        
+
             conceptoXCursoExamen.IdCurso = idCurso;
-            conceptoXCursoExamen.IdConcepto = int.Parse(ddlConceptoExamen.SelectedValue);           
+            conceptoXCursoExamen.IdConcepto = int.Parse(ddlConceptoExamen.SelectedValue);
             conceptoXCursoExamen.IdConceptoXCurso = idConceptoXCurso[2];
 
-            cursoNego.actualizarConceptoXCurso(conceptoXCursoExamen);           
-            
+            cursoNego.actualizarConceptoXCurso(conceptoXCursoExamen);
+
         }
 
         private bool isCursoChecked()

@@ -14,11 +14,6 @@ namespace CuotaSystem
         InscripcionNego inscripcionNego = new InscripcionNego();
         protected void Page_Load(object sender, EventArgs e)
         {
-            Login login = new Login();
-
-            if (!login.validarLogin())
-                Response.Redirect("Login.aspx");
-
             llenarLista();
         }
 

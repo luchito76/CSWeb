@@ -17,11 +17,6 @@ namespace CuotaSystem.Cursos
         CursoNego cursoNego = new CursoNego();
         protected void Page_Load(object sender, EventArgs e)
         {
-            Login login = new Login();
-
-            if (!login.validarLogin())
-                Response.Redirect("Login.aspx");
-
             llenarTabla();
         }
 

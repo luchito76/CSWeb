@@ -20,11 +20,6 @@ namespace CuotaSystem
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            Login login = new Login();
-
-            if (!login.validarLogin())
-                Response.Redirect("Login.aspx");
-
             if (IsPostBack) return;
 
             dtpFechaDesde.Text = DateTime.Today.ToShortDateString();
@@ -42,7 +37,8 @@ namespace CuotaSystem
             gdvReporteDiario.DataBind();
         }
 
-        private void llenarReporte() {
+        private void llenarReporte()
+        {
             DateTime fechaDesde = Convert.ToDateTime(dtpFechaDesde.Text);
             DateTime fechaHasta = Convert.ToDateTime(dtpFechaHasta.Text);
 
@@ -75,7 +71,7 @@ namespace CuotaSystem
 
             return String.Format("{0:C2}", total);
         }
-       
+
         public override void VerifyRenderingInServerForm(Control control)
         {
 
@@ -112,7 +108,8 @@ namespace CuotaSystem
             }
         }
 
-        private void convertToExcel() {
+        private void convertToExcel()
+        {
             Response.Clear();
             Response.Buffer = true;
             Response.AddHeader("content-disposition", "attachment;filename=ReporteSaldoDiario.xls");
@@ -157,10 +154,10 @@ namespace CuotaSystem
                 Response.Flush();
                 Response.End();
             }
-        }        
+        }
 
         protected void btnPdf_Click(object sender, EventArgs e)
-        {            
+        {
             converToPdf();
         }
 

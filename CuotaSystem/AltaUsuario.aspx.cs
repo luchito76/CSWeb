@@ -16,10 +16,7 @@ namespace CuotaSystem
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            Login login = new Login();
 
-            if (!login.validarLogin())
-                Response.Redirect("Login.aspx");
         }
 
         private void agregarUsuario()
@@ -44,7 +41,8 @@ namespace CuotaSystem
             {
                 clave = HashSHA1(txtContraseña.Text);
             }
-            else { 
+            else
+            {
                 errorClave.Visible = true;
                 throw new Exception();
             }

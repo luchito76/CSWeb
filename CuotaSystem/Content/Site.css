@@ -143,3 +143,10 @@ body {
         background-color: #dd4814;
         border-color: #dd4814;
     }
+
+.usuario {
+    font-family: Georgia;
+    font-size: 36px;
+    color:GrayText;
+    
+}

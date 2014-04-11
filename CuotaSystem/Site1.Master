@@ -22,14 +22,18 @@
     <link href="../Content/Site.css" rel="stylesheet" />
 
 </head>
-<body> 
+<body>
 
     <div id="wrap">
         <!-- Begin page content -->
         <div class="container">
-            <div class="page-header">
-                <asp:Image ID="Image1" runat="server" ImageUrl="../imagenes/logo.png" Width="300px" Height="150px" />
+            <div class="row">
+                <div class="col-md-6""><asp:Image ID="Image1" runat="server" ImageUrl="../imagenes/logo.png" Width="300px" Height="150px" /></div>
+                <div class="col-md-6 text-center text-right"><h1 class="usuario">Luis Parada</h1></div>
             </div>
+            <%--<div class="page-header">
+                <asp:Image ID="Image1" runat="server" ImageUrl="../imagenes/logo.png" Width="300px" Height="150px" /><h1 class="col-sm-offset-2 col-sm-4">Luis Parada</h1>
+            </div>--%>
             <div id="barranavegacion" runat="server">
                 <ul id="menu-bar" class="menu-bar">
                     <li><a href="#">Administración</a>
@@ -106,8 +110,8 @@
                     <li><a href="#">Reportes</a>
                         <ul>
                             <li><a href="../ReporteDePagos.aspx">Reporte Diario</a></li>
-                            <li><a href="../ReportePagoMensual.aspx">Reporte Mensual</a></li>                                                        
-                        </ul>                        
+                            <li><a href="../ReportePagoMensual.aspx">Reporte Mensual</a></li>
+                        </ul>
                     </li>
                     <li><a href="#">Contacto</a>
                         <ul>
@@ -124,6 +128,7 @@
                     <li><a href="Logout.aspx">Salir</a></li>
                 </ul>
             </div>
+
             <form id="form" class="form-horizontal" runat="server">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                 </asp:ContentPlaceHolder>

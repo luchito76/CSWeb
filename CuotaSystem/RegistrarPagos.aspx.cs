@@ -66,6 +66,8 @@ namespace CuotaSystem
             Session.Remove("idMes");
             llenarListas();
             esconderAlertas();
+
+            lblMensajeError.Text = "";
         }
 
         public string fechaActual()
@@ -123,7 +125,9 @@ namespace CuotaSystem
             IList<ConceptoXAlumnoResultSet0> listaConceptoXAlumno = pagosNego.conceptoXAlumno(idAlumno, idTipoDeConcepto).ToList();
             IList<ListaInscripcionesResultSet0> listaInscripciones = inscripcionNego.listaInscripciones(idAlumno).ToList();
 
-            if (pagosNego.validarPago(idAlumno, idTipoDeConcepto, listaInscripciones.Count, listaConceptoXAlumno.Count))
+            string mensajeError = pagosNego.validarPago(idAlumno, idTipoDeConcepto, listaInscripciones.Count, listaConceptoXAlumno.Count);
+
+            if (mensajeError == "")
             {
                 IList<Concepto> listaConceptos = conceptoNego.listaConceptosXIdTipoConcepto(idTipoDeConcepto).ToList();
 
@@ -163,6 +167,14 @@ namespace CuotaSystem
                 typehead.Visible = false;
                 alumnoTypehead.Visible = true;
                 txtValoraPagar.Focus();
+            }
+            else
+            {
+                error.Visible = true;
+                lblMensajeError.Text = mensajeError.ToString();
+
+                string script = @"<script type='text/javascript'>function redirection(){ window.location ='RegistrarPagos.aspx'; }  setTimeout ('redirection()', 2500); //tiempo en milisegundos </script>";
+                ScriptManager.RegisterStartupScript(this, typeof(Page), "redirection()", script, false);
             }
         }
 
@@ -240,7 +252,7 @@ namespace CuotaSystem
         {
             //if (hdnNombreAlumno.Value != "")
             //{
-            if (pagosNego.validarPago(txtValoraPagar.Text))
+            if (pagosNego.validarPago(txtValoraPagar.Text) == "")
             {
                 Pago pago = new Pago();
                 DetallePago detallePago = new DetallePago();
@@ -274,23 +286,35 @@ namespace CuotaSystem
 
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
+            string mensajeError = pagosNego.validarPago(txtValoraPagar.Text);
             try
             {
-                guardarPago();
+                if (mensajeError == "")
+                {
+                    guardarPago();
 
-                Utility.Utility.limpiarControles(this.Controls);
+                    Utility.Utility.limpiarControles(this.Controls);
 
-                lblValorDeConceptoConDescuento.Visible = false;
-                txtValorConceptoConDescuento.Visible = false;
+                    lblValorDeConceptoConDescuento.Visible = false;
+                    txtValorConceptoConDescuento.Visible = false;
 
-                alerta.Visible = true;
+                    alerta.Visible = true;
 
-                typehead.Visible = true;
-                alumnoTypehead.Visible = false;
-                typehead.Focus();
+                    typehead.Visible = true;
+                    alumnoTypehead.Visible = false;
+                    typehead.Focus();
 
-                string script = @"<script type='text/javascript'>function redirection(){ window.location ='RegistrarPagos.aspx'; }  setTimeout ('redirection()', 2000); //tiempo en milisegundos </script>";
-                ScriptManager.RegisterStartupScript(this, typeof(Page), "redirection()", script, false);
+                    string script = @"<script type='text/javascript'>function redirection(){ window.location ='RegistrarPagos.aspx'; }  setTimeout ('redirection()', 2000); //tiempo en milisegundos </script>";
+                    ScriptManager.RegisterStartupScript(this, typeof(Page), "redirection()", script, false);
+                }
+                else
+                {
+                    error.Visible = true;
+                    lblMensajeError.Text = mensajeError.ToString();
+
+                    string script = @"<script type='text/javascript'>function redirection(){ window.location ='RegistrarPagos.aspx'; }  setTimeout ('redirection()', 2500); //tiempo en milisegundos </script>";
+                    ScriptManager.RegisterStartupScript(this, typeof(Page), "redirection()", script, false);
+                }
             }
             catch (Exception ex)
             {
@@ -318,6 +342,7 @@ namespace CuotaSystem
 
             if (valorAPagar > valorDeConcepto)
             {
+                lblMensajeError.Text = "El valor a pagar no puede ser mayor al valor del concepto";
                 error.Visible = true;
                 txtValoraPagar.Text = string.Empty;
             }

@@ -132,7 +132,9 @@
                             <div id="error" runat="server" class="col-lg-5" visible="false">
                                 <div class="alert alert-danger alert-dismissable">
                                     <button id="btnError" type="button" class="close" data-dismiss="alert">&times;</button>
-                                    <strong>El Valor del Pago es mayor al Valor a Pagar.</strong>
+                                    <strong>
+                                        <asp:Label ID="lblMensajeError" runat="server" Text=""></asp:Label>
+                                    </strong>
                                 </div>
                             </div>
 
@@ -163,50 +165,12 @@
                 </div>
             </div>
         </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Registrar Descuentos
-                    </a>
-                </h4>
-            </div>
-            <div id="collapseTwo" class="panel-collapse collapse">
-                <div class="panel-body">
-                    <div class="panel panel-primary" id="form">
-                        <div class="panel-heading">
-                            <h2 class="panel-title">Alta Alumnos</h2>
-                        </div>
-
-                        <div class="form-group">
-                            <b>
-                                <asp:Label ID="Label1" runat="server" Text="Nombre" for="txtNombre" class="col-sm-2 control-label">      
-                                </asp:Label></b>
-                            <div class="col-sm-3">
-                                <asp:TextBox runat="server" class="form-control" ID="TextBox1" placeholder="Nombre"></asp:TextBox>
-                                <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Ingrese un Nombre" ControlToValidate="txtNombre" ForeColor="Red"></asp:RequiredFieldValidator>--%>
-                            </div>
-
-
-                            <b>
-                                <asp:Label ID="Label2" runat="server" Text="Apellido" for="txtApellido" class="col-sm-2 control-label">      
-                                </asp:Label></b>
-                            <div class="col-sm-3">
-                                <asp:TextBox runat="server" class="form-control" ID="TextBox2" placeholder="Apellido"></asp:TextBox>
-                                <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Ingrese un Apellido" ControlToValidate="txtApellido" ForeColor="Red"></asp:RequiredFieldValidator>--%>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
     </div>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 
     <script src="bootstrap3-typeahead.js"></script>
-
-   
 
     <script>
         var productNames = new Array();
@@ -240,7 +204,6 @@
 
                 return item;
             },
-
         });
 
     </script>

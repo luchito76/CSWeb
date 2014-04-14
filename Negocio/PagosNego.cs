@@ -51,31 +51,37 @@ namespace Negocio
 
         //*************************************VALIDACIONES**********************************************************************
 
-        public bool validarPago(int idAlumno, int idTipoConcepto, int inscripcion, int idConcepto)
+        public string validarPago(int idAlumno, int idTipoConcepto, int inscripcion, int idConcepto)
         {
-            bool pagoError = true;
+            //bool pagoError = true;
+            string pagoError = string.Empty;
 
             if (idAlumno == 0)
-                throw new PagoExcepcion("Debe ingresar un alumno");
+                //throw new PagoExcepcion("Debe ingresar un alumno");
+                return pagoError = "Debe ingresar un alumno";
 
             if (idTipoConcepto == 0)
-                throw new PagoExcepcion("Debe seleccionar un concepto");
+                //throw new PagoExcepcion("Debe seleccionar un concepto");
+                return pagoError = "Debe seleccionar un concepto";
 
             if (inscripcion == 0)
-                throw new PagoExcepcion("El alumno no esta inscripto a ninguna cursada");
+                //throw new PagoExcepcion("El alumno no esta inscripto a ninguna cursada");
+                return pagoError = "El alumno no esta inscripto a ninguna cursada";
 
             if (idConcepto == 0)
-                throw new PagoExcepcion("Verifique los conceptos del curso al cual está inscripto el alumno.");
+                //throw new PagoExcepcion("Verifique los conceptos del curso al cual está inscripto el alumno.");
+                return pagoError = "Verifique los conceptos del curso al cual está inscripto el alumno.";
 
             return pagoError;
         }
 
-        public bool validarPago(string valorAPagar)
+        public string validarPago(string valorAPagar)
         {
-            bool pagoError = true;
+            string pagoError = string.Empty;
 
             if (string.IsNullOrEmpty(valorAPagar))
-                throw new PagoExcepcion("Debe ingresar el valor a pagar");
+                //throw new PagoExcepcion("Debe ingresar el valor a pagar");
+                pagoError = "Debe ingresar el valor a pagar";
 
             return pagoError;
         }

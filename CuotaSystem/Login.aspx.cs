@@ -18,6 +18,8 @@ namespace CuotaSystem
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            txtUsuario.Focus();
+
             if (IsPostBack) return;
 
             alerta.Visible = false;

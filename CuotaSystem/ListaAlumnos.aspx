@@ -5,8 +5,18 @@
         <div class="panel-heading">
             <h2 class="panel-title">Listado de Alumnos</h2>
         </div>
+
+        <div class="form-group">
+            <b>
+                <asp:Label ID="lblFiltro" runat="server" Text="Buscar Alumno" for="txtNombre" class="col-sm-2 control-label">      
+                </asp:Label></b>
+            <div class="col-sm-3">
+                <input type="search" class="form-control" class="light-table-filter" data-table="order-table" placeholder="Filtro" />
+            </div>
+        </div>
+
         <div id="page-selection" class="bs-example table-responsive">
-            <asp:GridView ID="gdvListaAlumnos" runat="server" CssClass="table table-striped table-bordered table-hover" AutoGenerateColumns="false"
+            <asp:GridView ID="gdvListaAlumnos" runat="server" CssClass="table table-striped table-bordered table-hover order-table" AutoGenerateColumns="false"
                 DataKeyNames="idAlumno" EmptyDataText="No se encontraron alumnos" OnRowCommand="gdvListaAlumnos_RowCommand" AllowPaging="true" PageSize="10"
                 OnSelectedIndexChanging="gdvListaAlumnos_SelectedIndexChanging" OnPageIndexChanging="gdvListaAlumnos_PageIndexChanging">
 
@@ -27,8 +37,7 @@
             </asp:GridView>
         </div>
 
-    </div>
-
+    </div>    
 
     <script>
         $.fn.pageMe = function (opts) {
@@ -150,6 +159,5 @@
             $('.gdvListaAlumnos').pageMe({ pagerSelector: '.myPager', showPrevNext: true, hidePageNumbers: false, perPage: 4 });
 
         });
-    </script>
-    <%--<script src="//raw.github.com/botmonster/jquery-bootpag/master/lib/jquery.bootpag.min.js"></script>--%>
+    </script>    
 </asp:Content>

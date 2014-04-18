@@ -33,8 +33,10 @@ namespace CuotaSystem
             string contraseña = txtContraseña.Text;
 
             Usuario oUsuario = new Usuario();
-
             oUsuario = usuarioNego.listaUsuarioXusuario(usuario).FirstOrDefault();
+
+            Session["nombre"] = oUsuario.Nombre;
+            Session["apellido"] = oUsuario.Apellido;
 
             string hashedPassword = HashSHA1(contraseña);
 

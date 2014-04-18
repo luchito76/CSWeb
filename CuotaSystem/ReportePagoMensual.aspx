@@ -2,9 +2,18 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <asp:GridView ID="gdvReportePagoMensual" runat="server" AutoGenerateColumns="false" CssClass="table table-bordered" OnRowDataBound="gdvReportePagoMensual_RowDataBound">
+    <div class="form-group">
+        <b>
+            <asp:Label ID="lblFiltro" runat="server" Text="Buscar Pago" for="txtNombre" class="col-sm-2 control-label">      
+            </asp:Label></b>
+        <div class="col-sm-3">
+            <input type="search" class="form-control light-table-filter" data-table="order-table" placeholder="Filtro" />
+        </div>
+    </div>
+
+    <asp:GridView ID="gdvReportePagoMensual" runat="server" AutoGenerateColumns="false" CssClass="table table-bordered order-table" OnRowDataBound="gdvReportePagoMensual_RowDataBound">
         <Columns>
-            <asp:BoundField DataField="Alumno" HeaderText="Alumno" ItemStyle-Width="20%"/>
+            <asp:BoundField DataField="Alumno" HeaderText="Alumno" ItemStyle-Width="20%" />
             <asp:BoundField DataField="ValorConcepto" HeaderText="Valor de Cuota" />
             <asp:TemplateField HeaderText="Marzo" ItemStyle-HorizontalAlign="Center">
                 <ItemTemplate>

@@ -306,6 +306,7 @@
     <Content Include="Bootstrap\Bootsrap2\bootstrap.js" />
     <Content Include="Bootstrap\Bootsrap2\bootstrap.min.css" />
     <Content Include="Bootstrap\Bootsrap2\bootstrap.min.js" />
+    <Content Include="Bootstrap\Bootsrap2\DT_bootstrap.js" />
     <Content Include="Bootstrap\Bootstrap3\bootstrap-datetimepicker.es.js" />
     <Content Include="Bootstrap\Bootstrap3\bootstrap-datetimepicker.js" />
     <Content Include="Bootstrap\Bootstrap3\bootstrap-datetimepicker.min.css" />
@@ -374,6 +375,8 @@
     <Content Include="ListaInscripciones.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Logout.aspx" />
+    <Content Include="Prueba.aspx" />
+    <Content Include="Prueba1.aspx" />
     <Content Include="RegistrarPagos.aspx" />
     <Content Include="ReporteDePagos.aspx" />
     <Content Include="ReportePagoMensual.aspx" />
@@ -677,6 +680,20 @@
       <DependentUpon>Probando.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Prueba.aspx.cs">
+      <DependentUpon>Prueba.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Prueba.aspx.designer.cs">
+      <DependentUpon>Prueba.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Prueba1.aspx.cs">
+      <DependentUpon>Prueba1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Prueba1.aspx.designer.cs">
+      <DependentUpon>Prueba1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="RegistrarPagos.aspx.cs">
       <DependentUpon>RegistrarPagos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

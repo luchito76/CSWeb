@@ -10,24 +10,24 @@
 namespace CuotaSystem {
     
     
-    public partial class ListaConceptos {
+    public partial class Prueba1 {
         
         /// <summary>
-        /// lblFiltro control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblFiltro;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// gdvListaConceptos control.
+        /// gdvPrueba control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gdvListaConceptos;
+        protected global::System.Web.UI.WebControls.GridView gdvPrueba;
     }
 }

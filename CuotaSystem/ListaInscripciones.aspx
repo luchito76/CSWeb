@@ -5,8 +5,18 @@
         <div class="panel-heading">
             <h2 class="panel-title">Listado de Inscripciones</h2>
         </div>
+
+         <div class="form-group">
+            <b>
+                <asp:Label ID="lblFiltro" runat="server" Text="Buscar Inscripción" for="txtNombre" class="col-sm-2 control-label">      
+                </asp:Label></b>
+            <div class="col-sm-3">
+                <input type="search" class="form-control light-table-filter" data-table="order-table" placeholder="Filtro" />
+            </div>
+        </div>
+
         <div id="page-selection" class="bs-example table-responsive">
-            <asp:GridView ID="gdvListaInscripcion" runat="server" CssClass="table table-striped table-bordered table-hover" AutoGenerateColumns="false"
+            <asp:GridView ID="gdvListaInscripcion" runat="server" CssClass="table table-striped table-bordered table-hover order-table" AutoGenerateColumns="false"
                 DataKeyNames="idInscripcion" EmptyDataText="No se encontraron Inscripciones" OnRowCommand="gdvListaInscripcion_RowCommand" AllowPaging="true" PageSize="10"
                 OnSelectedIndexChanging="gdvListaInscripcion_SelectedIndexChanging" OnPageIndexChanging="gdvListaInscripcion_PageIndexChanging">
 

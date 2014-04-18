@@ -1,38 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="ListaConceptos.aspx.cs" Inherits="CuotaSystem.ListaConceptos" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="Prueba.aspx.cs" Inherits="CuotaSystem.Prueba" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="panel panel-primary" id="form1">
-        <div class="panel-heading">
-            <h2 class="panel-title">Listado de Conceptos</h2>
-        </div>
+    <input type="search" class="light-table-filter" data-table="order-table" placeholder="Filtrer" />
 
-        <div class="form-group">
-            <b>
-                <asp:Label ID="lblFiltro" runat="server" Text="Buscar Concepto" for="txtNombre" class="col-sm-2 control-label">      
-                </asp:Label></b>
-            <div class="col-sm-3">
-                <input type="search" class="form-control light-table-filter" data-table="order-table" placeholder="Filtro" />
-            </div>
-        </div>
+    <asp:GridView ID="gdvPrueba" class="table table-hover order-table" runat="server"></asp:GridView>
 
-        <div class="bs-example table-responsive" id="page-selection">
-            <asp:GridView ID="gdvListaConceptos" runat="server" CssClass="table table-striped table-bordered table-hover order-table" AutoGenerateColumns="false"
-                DataKeyNames="idConcepto" EmptyDataText="No se encontraron conceptos" OnRowCommand="gdvListaConceptos_RowCommand" AllowPaging="true"
-                PageSize="10" OnSelectedIndexChanging="gdvListaConceptos_SelectedIndexChanging" OnPageIndexChanging="gdvListaConceptos_PageIndexChanging">
-                <Columns>
-                    <asp:TemplateField HeaderText="Concepto" HeaderStyle-Font-Size="Large" HeaderStyle-Font-Bold="true">
-                        <ItemTemplate>
-                            <asp:LinkButton ID="lnkConcepto" Text='<%#Eval("nombre")%>' CommandName="Concepto" runat="server"
-                                AlternateText="Editar Concepto" CommandArgument='<%# Eval("idConcepto" )%>' />
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                    <asp:BoundField DataField="valorConcepto" HeaderText="Valor Concepto" DataFormatString="{0:C}" ItemStyle-HorizontalAlign="Center"></asp:BoundField>
-                </Columns>
-                <PagerStyle CssClass="gridview" HorizontalAlign="Center" />
-            </asp:GridView>
-
-        </div>
-    </div>
 
     <script>
         $.fn.pageMe = function (opts) {
@@ -151,10 +123,23 @@
 
         $(document).ready(function () {
 
-            $('.gdvListaConceptos').pageMe({ pagerSelector: '.myPager', showPrevNext: true, hidePageNumbers: false, perPage: 4 });
+            $('.gdvPrueba').pageMe({ pagerSelector: '.myPager', showPrevNext: true, hidePageNumbers: false, perPage: 4 });
 
         });
     </script>
 
-    <%--<script src="//raw.github.com/botmonster/jquery-bootpag/master/lib/jquery.bootpag.min.js"></script>--%>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="//datatables.net/download/build/nightly/jquery.dataTables.js"></script>
+
+    <script src="Bootstrap/Bootsrap2/DT_bootstrap.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            var table = $('#gdvPrueba').DataTable();
+        });
+
+    </script>
+
+
 </asp:Content>

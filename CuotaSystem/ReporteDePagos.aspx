@@ -33,8 +33,17 @@
         </div>
     </div>
 
+    <div class="form-group">
+        <b>
+            <asp:Label ID="lblFiltro" runat="server" Text="Buscar Pago" for="txtNombre" class="col-sm-2 control-label">      
+            </asp:Label></b>
+        <div class="col-sm-3">
+            <input type="search" class="form-control light-table-filter" data-table="order-table" placeholder="Filtro" />
+        </div>
+    </div>
+
     <asp:GridView ID="gdvReporteDiario" runat="server" AutoGenerateColumns="false" HeaderStyle-BackColor="#FF4500" ShowFooter="true"
-        HeaderStyle-ForeColor="White" class="table table-bordered table-hover table-responsive" OnRowDataBound="gdvReporteDiario_RowDataBound">
+        HeaderStyle-ForeColor="White" class="table table-bordered table-hover table-responsive order-table" OnRowDataBound="gdvReporteDiario_RowDataBound">
         <Columns>
             <asp:TemplateField HeaderText="Alumno">
                 <ItemTemplate>

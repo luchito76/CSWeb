@@ -29,7 +29,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6""><asp:Image ID="Image1" runat="server" ImageUrl="../imagenes/logo.png" Width="300px" Height="150px" /></div>
-                <div class="col-md-6 text-center text-right"><h1 class="usuario">Luis Parada</h1></div>
+                <div class="col-md-6 text-center text-right"><h1 class="usuario"><%=usuario() %></h1></div>
             </div>
             <%--<div class="page-header">
                 <asp:Image ID="Image1" runat="server" ImageUrl="../imagenes/logo.png" Width="300px" Height="150px" /><h1 class="col-sm-offset-2 col-sm-4">Luis Parada</h1>
@@ -115,7 +115,7 @@
                     </li>
                     <li><a href="#">Contacto</a>
                         <ul>
-                            <li><a href="#"></a></li>
+                            <li><a href="Prueba1.aspx">Preuba Tabla</a></li>
                             <li><a href="#"></a></li>
                         </ul>
                     </li>
@@ -172,6 +172,52 @@
             forceParse: 0
         });
     </script>
+
+    <%--Filtro de las tablas--%>
+     <script type="text/javascript">
+
+         (function (document) {
+             'use strict';
+
+             var LightTableFilter = (function (Arr) {
+
+                 var _input;
+
+                 function _onInputEvent(e) {
+                     _input = e.target;
+                     var tables = document.getElementsByClassName(_input.getAttribute('data-table'));
+                     Arr.forEach.call(tables, function (table) {
+                         Arr.forEach.call(table.tBodies, function (tbody) {
+                             Arr.forEach.call(tbody.rows, _filter);
+                         });
+                     });
+                 }
+
+                 function _filter(row) {
+                     var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
+                     row.style.display = text.indexOf(val) === -1 ? 'none' : 'table-row';
+                 }
+
+                 return {
+                     init: function () {
+                         var inputs = document.getElementsByClassName('light-table-filter');
+                         Arr.forEach.call(inputs, function (input) {
+                             input.oninput = _onInputEvent;
+                         });
+                     }
+                 };
+             })(Array.prototype);
+
+             document.addEventListener('readystatechange', function () {
+                 if (document.readyState === 'complete') {
+                     LightTableFilter.init();
+                 }
+             });
+
+         })(document);
+
+        </script>
+
     <script>
         //setInterval(function () { document.getElementById("btnAlerta").click(); }, 3000);
 

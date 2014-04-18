@@ -16,5 +16,13 @@ namespace CuotaSystem
             if (!login.validarLogin())
                 Response.Redirect("Login.aspx");
         }
+
+        public string usuario()
+        {
+            string nombre = Session["nombre"].ToString();
+            string apellido = Session["apellido"].ToString();
+
+            return nombre + ' ' + apellido;
+        }
     }
 }

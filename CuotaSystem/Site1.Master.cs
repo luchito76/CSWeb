@@ -24,5 +24,12 @@ namespace CuotaSystem
 
             return nombre + ' ' + apellido;
         }
+
+        public string fechaDeHoy()
+        {
+            string fechaHoy = DateTime.Today.ToShortDateString();
+
+            return fechaHoy;
+        }
     }
 }

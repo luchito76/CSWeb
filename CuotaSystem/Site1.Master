@@ -30,6 +30,7 @@
             <div class="row">
                 <div class="col-md-6""><asp:Image ID="Image1" runat="server" ImageUrl="../imagenes/logo.png" Width="300px" Height="150px" /></div>
                 <div class="col-md-6 text-center text-right"><h1 class="usuario"><%=usuario() %></h1></div>
+                <div class="col-md-6 text-center text-right"><h1 class="usuario"><%=fechaDeHoy() %></h1></div>
             </div>
             <%--<div class="page-header">
                 <asp:Image ID="Image1" runat="server" ImageUrl="../imagenes/logo.png" Width="300px" Height="150px" /><h1 class="col-sm-offset-2 col-sm-4">Luis Parada</h1>

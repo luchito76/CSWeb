@@ -51,7 +51,7 @@ body {
     width: auto;
     max-width: 500px;
     padding: 0 15px;
-    margin:auto;
+    margin: auto;
 }
 
     .container_popup .credit {
@@ -145,8 +145,7 @@ body {
     }
 
 .usuario {
-    font-family: Georgia;
+    font-family: 'Trade Winds', cursive;
     font-size: 36px;
-    color:GrayText;
-    
+    color: #D45C00;
 }

@@ -37,7 +37,7 @@
 
                             <div class="form-group">
                                 <div class="input-group date form_date col-md-3" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="dd-mm-yyyy">
-                                    <asp:TextBox runat="server" ID="dtpFechaPago" class="form-control" data-date-format="dd/mm/yyyy" placeholder="dd/mm/aaaa">                    
+                                    <asp:TextBox runat="server" ID="dtpFechaPagoConcepto" class="form-control" data-date-format="dd/mm/yyyy" placeholder="dd/mm/aaaa">                    
                                     </asp:TextBox>
                                     <span class="input-group-addon"><span class="glyphicon glyphicon-calendar" /></span>
                                 </div>

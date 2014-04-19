@@ -76,13 +76,13 @@ namespace CuotaSystem {
         protected global::System.Web.UI.WebControls.Label lblFechaPago;
         
         /// <summary>
-        /// dtpFechaPago control.
+        /// dtpFechaPagoConcepto control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox dtpFechaPago;
+        protected global::System.Web.UI.WebControls.TextBox dtpFechaPagoConcepto;
         
         /// <summary>
         /// lblTipoDeConcepto control.

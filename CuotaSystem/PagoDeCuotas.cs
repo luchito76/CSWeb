@@ -54,7 +54,6 @@ namespace CuotaSystem
         {
             string mesApagar = string.Empty;
 
-            //DateTime fechaPago = DateTime.Now;
             int dia = fechaPago.Day;
             int mes = fechaPago.Month;
 

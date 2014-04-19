@@ -116,7 +116,7 @@ namespace CuotaSystem
 
         protected void ddlTipoDeConcepto_SelectedIndexChanged(object sender, EventArgs e)
         {
-            dtpFechaPago.Text = (dtpFechaPago.Text == "") ? DateTime.Today.ToShortDateString() : dtpFechaPago.Text;
+            dtpFechaPagoConcepto.Text = (dtpFechaPagoConcepto.Text == "") ? DateTime.Today.ToShortDateString() : dtpFechaPagoConcepto.Text;
 
             int idConcepto = 0;
             int idTipoDeConcepto = int.Parse(ddlTipoDeConcepto.SelectedValue);
@@ -148,7 +148,7 @@ namespace CuotaSystem
                 ddlConcepto.Text = concepto.IdConcepto.ToString();
                 decimal valorConcepto = Convert.ToDecimal(concepto.ValorConcepto);
 
-                DateTime fechaPago = Convert.ToDateTime(dtpFechaPago.Text);
+                DateTime fechaPagoConcepto = Convert.ToDateTime(dtpFechaPagoConcepto.Text);
 
                 txtAlumno.Text = hdnNombreAlumno.Value;
 
@@ -156,7 +156,7 @@ namespace CuotaSystem
 
                 switch (pagos)
                 {
-                    case Utility.PagosEnum.Cuota: pagoCuota(idAlumno, idConcepto, valorConcepto, fechaPago);
+                    case Utility.PagosEnum.Cuota: pagoCuota(idAlumno, idConcepto, valorConcepto, fechaPagoConcepto);
                         break;
                     case Utility.PagosEnum.Matricula: pagoMatricula(idAlumno, idConcepto, valorConcepto);
                         break;
@@ -178,10 +178,10 @@ namespace CuotaSystem
             }
         }
 
-        private void pagoCuota(int idAlumno, int idConcepto, decimal valorConcepto, DateTime fechaPago)
+        private void pagoCuota(int idAlumno, int idConcepto, decimal valorConcepto, DateTime fechaPagoConcepto)
         {
             lblConceptoAPagar.Visible = true;
-            lblConceptoAPagar.Text = pagarCuota.mesAPagar(idAlumno, idConcepto, fechaPago);
+            lblConceptoAPagar.Text = pagarCuota.mesAPagar(idAlumno, idConcepto, fechaPagoConcepto);
 
             txtValorConcepto.Text = String.Format("{0:0.00}", valorConcepto);
 
@@ -263,7 +263,8 @@ namespace CuotaSystem
                     detallePago.IdMes = int.Parse(Session["idMes"].ToString());
 
                 pago.IdAlumno = int.Parse(hdnAlumno.Value);
-                pago.FechaPago = Convert.ToDateTime(dtpFechaPago.Text);
+                pago.FechaPagoConcepto = Convert.ToDateTime(dtpFechaPagoConcepto.Text);
+                pago.FechaPago = DateTime.Today;
 
                 pagosNego.guardarPago(pago);
 

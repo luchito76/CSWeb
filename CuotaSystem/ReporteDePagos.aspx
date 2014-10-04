@@ -5,24 +5,20 @@
         <b>
             <asp:Label ID="lblFechaDesde" runat="server" Text="Fecha Desde" for="dtpFechaDesde" class="col-sm-2 control-label">      
             </asp:Label></b>
-        <%-- <div class="form-group">--%>
         <div class="input-group date form_date col-md-3" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input1" data-link-format="dd-mm-yyyy">
             <asp:TextBox runat="server" ID="dtpFechaDesde" class="form-control" data-date-format="dd/mm/yyyy" placeholder="dd/mm/aaaa">                    
             </asp:TextBox>
             <span class="input-group-addon" /><span class="glyphicon glyphicon-calendar" />
-            <%-- </div>--%>
             <input type="hidden" id="dtp_input1" value="" /><br />
         </div>
 
         <b>
             <asp:Label ID="lblFechaHasta" runat="server" Text="Fecha Hasta" for="dtpFechaHasta" class="col-sm-2 control-label">      
             </asp:Label></b>
-        <%--<div class="form-group">--%>
         <div class="input-group date form_date col-md-3" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="dd-mm-yyyy">
             <asp:TextBox runat="server" ID="dtpFechaHasta" class="form-control" data-date-format="dd/mm/yyyy" placeholder="dd/mm/aaaa">                    
             </asp:TextBox>
             <span class="input-group-addon" /><span class="glyphicon glyphicon-calendar" />
-            <%-- </div>--%>
             <input type="hidden" id="dtp_input2" value="" /><br />
         </div>
     </div>

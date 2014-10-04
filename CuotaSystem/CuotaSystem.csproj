@@ -354,6 +354,7 @@
     <Content Include="imagenes\help.gif" />
     <Content Include="imagenes\important.gif" />
     <Content Include="imagenes\info.gif" />
+    <Content Include="imagenes\logo_nuevo.png" />
     <Content Include="imagenes\Logo_PDF.png" />
     <Content Include="imagenes\nopagado.ico" />
     <Content Include="imagenes\pagado.ico" />

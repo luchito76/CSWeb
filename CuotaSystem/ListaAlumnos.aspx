@@ -1,6 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="ListaAlumnos.aspx.cs" Inherits="CuotaSystem.ListaAlumnos" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.0/css/jquery.dataTables.css">
+
     <div class="panel panel-primary" id="form">
         <div class="panel-heading">
             <h2 class="panel-title">Listado de Alumnos</h2>
@@ -11,33 +14,47 @@
                 <asp:Label ID="lblFiltro" runat="server" Text="Buscar Alumno" for="txtNombre" class="col-sm-2 control-label">      
                 </asp:Label></b>
             <div class="col-sm-3">
-                <input type="search" class="form-control" class="light-table-filter" data-table="order-table" placeholder="Filtro" />
+                <%--<input type="search" class="form-control light-table-filter" data-table="order-table"  placeholder="Filtro" />--%>
+                <input type="search" class="" aria-controls="gdvListaAlumnos" />
             </div>
         </div>
 
         <div id="page-selection" class="bs-example table-responsive">
-            <asp:GridView ID="gdvListaAlumnos" runat="server" CssClass="table table-striped table-bordered table-hover order-table" AutoGenerateColumns="false"
-                DataKeyNames="idAlumno" EmptyDataText="No se encontraron alumnos" OnRowCommand="gdvListaAlumnos_RowCommand" AllowPaging="true" PageSize="10"
-                OnSelectedIndexChanging="gdvListaAlumnos_SelectedIndexChanging" OnPageIndexChanging="gdvListaAlumnos_PageIndexChanging">
+            <table id="table_id" class="display">
+                <asp:GridView ID="gdvListaAlumnos" runat="server" CssClass="table table-striped table-bordered table-hover order-table display dataTable" AutoGenerateColumns="false"
+                    DataKeyNames="idAlumno" EmptyDataText="No se encontraron alumnos" OnRowCommand="gdvListaAlumnos_RowCommand" AllowPaging="true" PageSize="10"
+                    OnSelectedIndexChanging="gdvListaAlumnos_SelectedIndexChanging" OnPageIndexChanging="gdvListaAlumnos_PageIndexChanging">
 
-                <Columns>
-                    <asp:TemplateField HeaderText="Nombre y Apellido" HeaderStyle-HorizontalAlign="Center">
-                        <ItemTemplate>
-                            <asp:LinkButton ID="NombreCompleto" Text='<%#Eval("Apellido") + " " + Eval("Nombre")%> ' CommandName="Alumnos" runat="server"
-                                AlternateText="Lista Alumnos" CommandArgument='<%# Eval("idAlumno" )%>' />
-                        </ItemTemplate>
-                    </asp:TemplateField>
-                    <asp:BoundField DataField="dni" HeaderText="DNI" ItemStyle-HorizontalAlign="Center"></asp:BoundField>
-                    <asp:BoundField DataField="fechaNacimiento" HeaderText="Fecha Nacimiento" DataFormatString="{0:d}" ItemStyle-HorizontalAlign="Center"></asp:BoundField>
-                    <asp:BoundField DataField="direccion" HeaderText="Dirección" ItemStyle-HorizontalAlign="Center"></asp:BoundField>
-                    <asp:BoundField DataField="mail" HeaderText="e-Mail"></asp:BoundField>
-                    <asp:BoundField DataField="telefono" HeaderText="Teléfono" ItemStyle-HorizontalAlign="Center"></asp:BoundField>
-                </Columns>
-                <PagerStyle CssClass="gridview" HorizontalAlign="Center" />
-            </asp:GridView>
+                    <Columns>
+                        <asp:TemplateField HeaderText="Nombre y Apellido" HeaderStyle-HorizontalAlign="Center">
+                            <ItemTemplate>
+                                <asp:LinkButton ID="NombreCompleto" Text='<%#Eval("Apellido") + " " + Eval("Nombre")%> ' CommandName="Alumnos" runat="server"
+                                    AlternateText="Lista Alumnos" CommandArgument='<%# Eval("idAlumno" )%>' />
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:BoundField DataField="dni" HeaderText="DNI" ItemStyle-HorizontalAlign="Center"></asp:BoundField>
+                        <asp:BoundField DataField="fechaNacimiento" HeaderText="Fecha Nacimiento" DataFormatString="{0:d}" ItemStyle-HorizontalAlign="Center"></asp:BoundField>
+                        <asp:BoundField DataField="direccion" HeaderText="Dirección" ItemStyle-HorizontalAlign="Center"></asp:BoundField>
+                        <asp:BoundField DataField="mail" HeaderText="e-Mail"></asp:BoundField>
+                        <asp:BoundField DataField="telefono" HeaderText="Teléfono" ItemStyle-HorizontalAlign="Center"></asp:BoundField>
+                    </Columns>
+                    <PagerStyle CssClass="gridview" HorizontalAlign="Center" />
+                </asp:GridView>
+            </table>
         </div>
 
-    </div>    
+    </div>
+    <!-- jQuery -->
+    <script type="text/javascript" charset="utf8" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+
+    <!-- DataTables -->
+    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.0/js/jquery.dataTables.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#table_id').DataTable();
+        });
+    </script>
 
     <script>
         $.fn.pageMe = function (opts) {
@@ -159,5 +176,5 @@
             $('.gdvListaAlumnos').pageMe({ pagerSelector: '.myPager', showPrevNext: true, hidePageNumbers: false, perPage: 4 });
 
         });
-    </script>    
+    </script>
 </asp:Content>

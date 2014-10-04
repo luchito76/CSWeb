@@ -63,6 +63,19 @@ namespace Dominio
 			}
 		}
 		
+		private DateTime? fechaPagoConcepto;
+		public virtual DateTime? FechaPagoConcepto
+		{
+			get
+			{
+				return this.fechaPagoConcepto;
+			}
+			set
+			{
+				this.fechaPagoConcepto = value;
+			}
+		}
+		
 		private Alumno alumno;
 		public virtual Alumno Alumno
 		{

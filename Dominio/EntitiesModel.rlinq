@@ -520,6 +520,9 @@
         <orm:field name="fechaPago" property="FechaPago" behavior="readwrite" uniqueId="c33ff2a2-167b-4984-9f7b-a352bc79409a" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
           <orm:column name="fechaPago" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
         </orm:field>
+        <orm:field name="fechaPagoConcepto" property="FechaPagoConcepto" behavior="readwrite" uniqueId="e881f6e7-85b8-4cea-a4b2-6b169ed061ac" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="fechaPagoConcepto" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
         <orm:field name="alumno" property="Alumno" behavior="readwrite" uniqueId="e2db4bab-8ba4-47c9-a12f-a1caac6c653c" type="Dominio.Alumno">
           <orm:reference uniqueId="1cc4cebd-ad17-4d3b-a4e3-7b4769b46740" association-name="PagoHasAlumno">
             <orm:sharedfield name="idAlumno" target-class="Dominio.Alumno" target-field="idAlumno" />
@@ -835,6 +838,7 @@
         <orm:column name="idPago" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
         <orm:column name="idAlumno" sql-type="int" nullable="true" length="0" scale="0" ado-type="Int32" />
         <orm:column name="fechaPago" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="fechaPagoConcepto" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
         <orm:constraint name="FK__Pagos__idAlumno__47DBAE45" delete-action="dbdefaultrule" destination-table="Alumnos">
           <orm:column name="idAlumno" sql-type="int" nullable="true" length="0" scale="0" ado-type="Int32" />
         </orm:constraint>
@@ -1422,6 +1426,7 @@
       <Property Id="a1301694-2acb-4b38-9e1c-a23587c618a4" name="IdPago" type="Int32" label="IdPago : Int32" kind="Persistent" identity="true" fieldName="idPago" />
       <Property Id="c33ff2a2-167b-4984-9f7b-a352bc79409a" name="FechaPago" type="DateTime" label="FechaPago : DateTime" nullable="true" kind="Persistent" fieldName="fechaPago" />
       <Property Id="f7276e5f-720f-4ff5-aad0-6be87c6e5a1a" name="IdAlumno" type="Int32" label="IdAlumno : Int32" nullable="true" kind="Persistent" fieldName="idAlumno" />
+      <Property Id="e881f6e7-85b8-4cea-a4b2-6b169ed061ac" name="FechaPagoConcepto" type="DateTime" label="FechaPagoConcepto : DateTime" nullable="true" kind="Persistent" fieldName="fechaPagoConcepto" />
       <AssociationTargets>
         <Association Id="1cc4cebd-ad17-4d3b-a4e3-7b4769b46740" SourceMultiplicity="ZeroOne" name="PagoHasAlumno">
           <DomainClassMoniker name="/ModeloDominio/Alumno" />
